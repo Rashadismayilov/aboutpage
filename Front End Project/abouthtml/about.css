@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mycontainer1{
+ padding: 1rem 90px
+}
+#Header{
+    position: fixed;
+    width: 100%;
+    padding: 30px 4rem;
+}
+.Header-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Header-bottom{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 0px;
+    background-attachment: fixed;
+}
+.logo img{
+    max-height: 22px;
+    width: auto;
+}
+.Header-all{
+    margin: 0px 20px;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: #fff;
+    position: relative;
+}
+.icon a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.icon{
+    position: relative;
+
+}
+.icon i{
+    transition: .8s;
+}
+.icon i:hover{
+    transform: translateY(-15%);
+}
+.icon span{
+    position: absolute;
+    color: #fff;
+    font-size: 13px;
+    background-color:#c0a483;
+    border-radius: 50%;
+    padding: 0px 5px;
+    text-align: center;
+    top: 10px;
+}
+
+
+.icon :hover i{
+    bottom: 10px;
+}
+
+.navbar{
+    margin-right: 35rem;
+    display: flex;
+    align-items: center;
+}
+.icon :hover{
+    color: #c0a483;
+    cursor: pointer;
+}
+.icon a{
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+
+#centericon{
+    margin: 20px;
+}
+.icon i{
+    font-size: 20px;
+    color: #fff
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    background-color: #fff;
+    height: 1px;
+    bottom: 0px;
+    left: 0;
+    transition: .6s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+.center-text{
+    text-align: center;
+}
+.center-text h1{
+    color: #FFFFFF;
+    font-family: 'Marcellus SC', serif; 
+    font-size: 70px;
+    line-height: 80px;
+}
+.center-text p{
+    color: #FFFFFF;
+    font-family: 'Marcellus SC', serif; 
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3px;
+}
+#secondpage{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about-us.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.All-story{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.story-right h3{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+.story-right h2{
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Marcellus SC', serif; 
+    color: #000;
+    font-weight: 400;
+}
+.story-left img{
+    margin-top: 40px;
+}
+.meet-text h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: 'Marcellus SC', serif; 
+    margin-top: 40px;
+}
+.all-meetimage{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid  color #000000;;
+}
+.meetimage img{
+    padding: 30px;
+}
+.meetimage{
+    position: relative;
+}
+.meetimage::before{
+    content: "";
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.8);
+    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.meetimage::after{
+    content: "";
+    /* top: 20px; */
+    left: 6%;
+    border: 1px solid #c0a483;
+    width: 28%;
+    height: 55%;
+    position: absolute;
+    z-index: -1;  
+}
